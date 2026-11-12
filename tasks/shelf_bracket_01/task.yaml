@@ -1,0 +1,18 @@
+task_id: shelf_bracket_01
+title: "Mass Reduction of a Load-Bearing Shelf Bracket"
+domain: mechanical_engineering
+sub_domain: structural_optimization
+difficulty: medium
+author: Fletchepau
+tools_required:
+  - cadquery
+  - calculix
+  - pytest
+files:
+  prompt: prompt.md
+  generator: cad_generator.py
+  grader: test_grader.py
+constraints:
+  max_mass_kg: 0.45
+  max_von_mises_mpa: 140.0
+timeout_seconds: 300
